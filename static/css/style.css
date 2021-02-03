@@ -1,0 +1,109 @@
+body
+{
+  background-color: #EDDCD2;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  font-family: 'Anton', sans-serif;
+}
+
+.brand-logo {
+  font-family: 'Anton', sans-serif;
+}
+
+.navStyle {
+  background-color: #121212;
+}
+.grayButton {
+  background-color: gray;
+}
+.grayButton:hover {
+  background-color: #67E2E9;
+}
+.brickButton {
+  background-color: #BA3417;
+}
+.brickButton:hover {
+  background-color: #C71EBA;
+}
+.purpleButton {
+  background-color: #BA3417;
+}
+.purpleButton:hover {
+  background-color: #C71EBA;
+}
+.turquoiseButton {
+  background-color: #1B848A;
+}
+.turquoiseButton:hover {
+  background-color: #67E2E9;
+}
+.brickColor {
+  color: #BA3417;
+}
+.gray-text {
+  color: gray;
+}
+.white-text {
+  color: white;
+}
+.black-text {
+  color: #121212;
+}
+.colStyle {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border: solid 5px #BA3417;
+}
+main
+{
+  flex: 1 0 auto;
+}
+
+.is_signaled
+{
+  background-color: #9E9E9E !important;
+  transition: background 0.3s;
+}
+
+.vote-form
+{
+  display: inline-block;
+}
+
+.legalNotice{
+  padding: 0 0 50px 0;
+}
+
+.footer-row{
+  margin-bottom:0;
+}
+
+
+/* RESPONSIVE */
+
+@media all and (max-width: 785px){
+  .page-title
+  {
+    font-size: 3em;
+    text-align: center;
+    font-weight: bold;
+  }
+}
+
+@media all and (max-width: 482px){
+  nav .brand-logo
+  {
+    font-size: 1.3em;
+  }
+
+  .page-title
+  {
+    font-size: 2em;
+    text-align: center;
+    font-weight: bold;
+    text-align: center;
+  }
+}
