@@ -4341,7 +4341,7 @@ nav ul li {
 }
 
 nav ul li.active {
-  background-color: gray;
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
 nav ul a {

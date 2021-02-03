@@ -3,11 +3,11 @@
 
 <div class="container">
   <?php if (empty($this->oPosts)): ?>
-    <h1>Aucun film ici !</h1>
-    <p><button type="button" onclick="window.location='<?=ROOT_URL?>admin_add.html'" class="btn brickButton waves-effect waves-light">Ajouter un film</button></p>
+    <h1>Il n'y a aucun article.</h1>
+    <p><button type="button" onclick="window.location='<?=ROOT_URL?>admin_add.html'" class="btn waves-effect waves-light">Ajoutez votre premier article!</button></p>
   <?php else: ?>
-  <h1>Gestion du Box-Office</h1>
-  <a href="<?=ROOT_URL?>admin_add.html"><button class="btn brickButton waves-effect waves-light">Ajouter un film</button></a>
+  <h1>Edition</h1>
+  <a href="<?=ROOT_URL?>admin_add.html"><button class="btn light-blue waves-effect waves-light">Ajouter un article</button></a>
   <br>
   <br>
   <hr>

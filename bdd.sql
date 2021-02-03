@@ -21,8 +21,7 @@ SET time_zone = "+00:00";
 --
 -- Base de données :  `flooder34_blog-ecrivain`
 --
-CREATE DATABASE IF NOT EXISTS `blog-ecrivain` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
-USE `blog-ecrivain`;
+
 -- --------------------------------------------------------
 
 --

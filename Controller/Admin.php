@@ -51,7 +51,7 @@ class Admin extends Blog
             $this->oModel->updateImg($_FILES['image']['name'], $_GET['id'], $_FILES['image']['tmp_name']);
           }
 
-          $this->oUtil->sSuccMsg = 'Mise à jour validée';
+          $this->oUtil->sSuccMsg = 'L\'article a bien été mis à jour !';
 
         }
       }

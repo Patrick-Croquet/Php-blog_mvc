@@ -49,6 +49,6 @@ if ($title == false || strlen($status) != 3) {
 
     <p><?= $message ?></p>
 
-    <a href="https://www.romain-ollier.com/projet4/" class="btn blue waves-effect waves-light">Accueil</a>
+    <a href="https://www.romain-ollier.com/projet4/" class="btn blue waves-effect waves-light">Retourner à l'accueil</a>
   </div>
 </body

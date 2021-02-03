@@ -6,7 +6,7 @@
   		<div class="card-panel">
   			<div class="row">
   				<div class="col s6 offset-s3">
-  					<img src="static/img/login-clap.png" alt="connexion" width="100%">
+  					<img src="static/img/admin.png" alt="connexion" width="100%">
   				</div>
   			</div>
 
@@ -20,17 +20,17 @@
   				<div class="row">
   					<div class="input-field col s12">
   						<input type="email" id="email" name="email" required="required">
-  						<label for="email">Email</label>
+  						<label for="email">Adresse email</label>
   					</div>
 
   					<div class="input-field col s12">
   						<input type="password" id="password" name="password" required="required">
-  						<label for="password">Password</label>
+  						<label for="password">Mot de passe</label>
   					</div>
   				</div>
 
   				<center>
-  					<button type="submit" name="submit" class="waves-effect waves-light btn brickButton">
+  					<button type="submit" name="submit" class="waves-effect waves-light btn light-blue">
   						<i class="material-icons left">perm_identity</i>
   						Se connecter
   					</button>
@@ -39,7 +39,7 @@
 
   		</div>
       <center>
-        <a class="brickColor" href="<?=ROOT_URL?>blog_registration.html">Nouveau cinéphile ?</a>
+        <a href="<?=ROOT_URL?>blog_registration.html">Pas encore inscrit ?</a>
       </center>
   	</div>
   </div>

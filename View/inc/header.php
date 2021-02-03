@@ -6,7 +6,6 @@
       <!--Import materialize.css-->
       <link type="text/css" rel="stylesheet" href="<?=ROOT_URL?>static/css/materialize.css"  media="screen,projection"/>
       <link type="text/css" rel="stylesheet" href="<?=ROOT_URL?>static/css/style.css"/>
-      <link href="https://fonts.googleapis.com/css2?family=Anton&family=Notable&display=swap" rel="stylesheet">
       <!--Let browser know website is optimized for mobile-->
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
       <meta charset="utf-8" />

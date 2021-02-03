@@ -18,19 +18,19 @@
           <div class="row">
             <div class="input-field col s12">
               <input type="email" name="email" id="email">
-              <label for="email">Email</label>
+              <label for="email">Adresse email</label>
             </div>
             <div class="input-field col s12">
               <input type="text" name="pseudo" id="pseudo">
-              <label for="pseudo">Prénom</label>
+              <label for="pseudo">Pseudo</label>
             </div>
             <div class="input-field col s12">
               <input type="password" id="password" name="password">
-              <label for="password">Password</label>
+              <label for="password">Mot de passe</label>
             </div>
             <div class="input-field col s12">
               <input type="password" name="password_again" id="password_again">
-              <label for="password_again">Password again</label>
+              <label for="password_again">Répéter le mot de passe</label>
             </div>
             <center>
                 <button type="submit" name="submit" class="btn waves-effect waves-light light-blue">

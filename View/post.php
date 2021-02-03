@@ -7,7 +7,7 @@
         <!-- Article -->
 
         <?php if (empty($this->oPost)): ?>
-            <h1>Film introuvable</h1>
+            <h1>cet article n'existe pas !</h1>
         <?php else: ?>
 
             <article>
@@ -22,9 +22,9 @@
 
             <!-- Commentaires -->
 
-            <h4 id="comment_ink">Critiques du film</h4>
+            <h4 id="comment_ink">Commentaires :</h4>
             <?php if (empty($this->oComments)): ?>
-                <p class="bold">Aucune critique pour l'instant</p>
+                <p class="bold">Aucun commentaire n'a été publié... Soyez le premier!</p>
             <?php else: ?>
 
                 <?php foreach ($this->oComments as $oComment): ?>
@@ -34,7 +34,7 @@
                         <p><?= nl2br($oComment->comment); ?></p>
                     </blockquote>
                     <?php if (!empty($_SESSION['is_admin'])): ?>
-                        <a href="<?=ROOT_URL?>?p=admin&amp;a=deleteComment&amp;id=<?=$oComment->id?>&amp;postid=<?=$this->oPost->id?>"><button class="btn purpleButton waves-effect waves-light">Supprimer</button></a>
+                        <a href="<?=ROOT_URL?>?p=admin&amp;a=deleteComment&amp;id=<?=$oComment->id?>&amp;postid=<?=$this->oPost->id?>"><button class="btn red waves-effect waves-light">Supprimer</button></a>
                     <?php endif ?>
 
                     <?php if(!empty($_SESSION['is_user'])): ?>
@@ -49,7 +49,7 @@
                         <pre>
       </pre>
                         <form class="vote-form" action="blog_signal_<?=$this->oPost->id?>_<?=$oComment->id?>_1.html" method="POST">
-                            <button class="btn brickButton waves-effect waves-light signal-btn <?= $color ?>" type="submit">Signaler</button>
+                            <button class="btn red waves-effect waves-light signal-btn <?= $color ?>" type="submit">Signaler</button>
                         </form>
                     <?php endif ?>
 
@@ -61,20 +61,20 @@
 
             <!-- Formulaire -->
             <?php if(empty($_SESSION['is_user']) && empty($_SESSION['is_admin'])): ?>
-                <a href="<?=ROOT_URL?>?p=blog&amp;a=login"><button class="btn brickButton waves-effect waves-light">Se connecter pour ajouter une critique</button></a>
+                <a href="<?=ROOT_URL?>?p=blog&amp;a=login"><button class="btn waves-effect waves-light">Se connecter pour commenter</button></a>
                 <br><br>
             <?php else: ?>
-                <h4>Ajouter une critique :</h4>
+                <h4>Commenter :</h4>
                 <?php require 'inc/msg.php' ?>
                 <form method="post">
                     <div class="row">
                         <div class="input-field col s12">
                             <textarea name="comment" id="comment" class="materialize-textarea" maxlength="1200"></textarea>
-                            <label for="comment">Votre texte</label>
+                            <label for="comment">Commentaire</label>
                         </div>
                         <div class="col s12">
-                            <button type="submit" name="submit_comment" class="btn turquoiseButton waves-effect waves-light">
-                                Valider
+                            <button type="submit" name="submit_comment" class="btn waves-effect waves-light">
+                                Commenter
                             </button>
                         </div>
                     </div>
