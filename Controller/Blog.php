@@ -163,7 +163,7 @@ class Blog
 
 			else
 			{
-				$aData = array('email' => $sEmail, 'pseudo' => $sPseudo, 'password' => sha1($sPassword));
+				$aData = array('email' => $sEmail, 'pseudo' => $sPseudo, 'password' => md5($sPassword));
 				$this->oModel->addUser($aData);
 				?> <script>window.location.replace('blog_login.html');</script> <?php
 				$this->oUtil->sSuccMsg = 'Votre compte a été créé, vous pouvez maintenant vous connecter';
